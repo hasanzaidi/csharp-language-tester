@@ -6,7 +6,7 @@ namespace CSharpLanguageTester
     {
         static void Main(string[] args)
         {
-            // Code snippets which can't really be expressed in unit test
+            // Code snippets which can't really be expressed in unit tests
         }
     }
 }
