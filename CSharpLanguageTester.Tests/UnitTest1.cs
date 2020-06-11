@@ -16,6 +16,11 @@ namespace CSharpLanguageTester.Tests
             (int a, string b) pair = (1, "Hello");
             pair.a.Should().Be(1);
             pair.b.Should().Be("Hello");
+
+            var p = new Person("John", "Smith", "London");
+            var (fName, lName) = p;
+            fName.Should().Be("John");
+            lName.Should().Be("Smith");
         }
 
         [TestMethod]
