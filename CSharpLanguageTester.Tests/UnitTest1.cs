@@ -1,6 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace CSharp.Tests
+namespace CSharpLanguageTester.Tests
 {
     [TestClass]
     public class UnitTest1
@@ -8,6 +8,7 @@ namespace CSharp.Tests
         [TestMethod]
         public void TestMethod1()
         {
+            Class1 c = new Class1();
             Assert.IsFalse(false);
         }
     }
