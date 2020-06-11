@@ -1,4 +1,6 @@
+using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 
 namespace CSharpLanguageTester.Tests
 {
@@ -6,10 +8,20 @@ namespace CSharpLanguageTester.Tests
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestTuples()
         {
-            Class1 c = new Class1();
-            Assert.IsFalse(false);
+            // Tuples are like lists which can have mixed types
+            (int a, string b) pair = (1, "Hello");
+            pair.a.Should().Be(1);
+            pair.b.Should().Be("Hello");
+        }
+
+        [TestMethod]
+        public void TestLambdas()
+        {
+            Func<int, int> square = x => x * x;
+            int squareVal = square(5);
+            squareVal.Should().Be(25);
         }
     }
 }

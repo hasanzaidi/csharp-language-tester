@@ -4,5 +4,6 @@ namespace CSharpLanguageTester
 {
     public class Class1
     {
+
     }
 }
